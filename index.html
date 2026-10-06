@@ -112,6 +112,14 @@
     .cta .store-btn:hover { background: var(--ice); color: var(--navy); }
     .cta .store-btn.soon { background: rgba(255,255,255,.14); color: rgba(255,255,255,.7); }
 
+    /* Credits */
+    section.credits { padding-top: 56px; }
+    .credits dl { margin: 24px auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 48px; }
+    .credits dt { font: 800 12px 'Nunito', sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); text-align: center; }
+    .credits dd { margin: 4px 0 0; font: 700 17px 'Nunito', sans-serif; color: var(--navy); text-align: center; }
+    .credits dd small { display: block; margin-top: 2px; font: 600 13px 'Nunito', sans-serif; color: var(--muted); }
+    .credits dd a { color: var(--blue); }
+
     footer { padding-top: 48px; padding-bottom: 40px; display: flex; flex-direction: column; align-items: center; gap: 14px; }
     footer .studio { display: flex; flex-direction: column; align-items: center; gap: 6px; font: 700 12px 'Nunito', sans-serif; letter-spacing: .12em; color: #9aa8bd; }
     footer .studio img { height: 44px; width: auto; mix-blend-mode: multiply; }
@@ -209,6 +217,15 @@
         <div class="stores" data-stores></div>
       </div>
     </section>
+
+    <section id="credits" class="wrap credits">
+      <h2 class="section-title display">Credits</h2>
+      <dl>
+        <div><dt>Artwork</dt><dd>Hugo Dolores<small>© Hugo Dolores, all rights reserved</small></dd></div>
+        <div><dt>Music</dt><dd>Made with <a href="https://suno.com">Suno</a></dd></div>
+        <div><dt>Game</dt><dd><a href="https://helioshred.com">HelioShred Games</a></dd></div>
+      </dl>
+    </section>
   </main>
 
   <footer class="wrap">
@@ -218,7 +235,7 @@
       <a href="/terms">Terms of Use</a><span>·</span>
       <a href="/support">Support</a>
     </div>
-    <div class="copy">© 2026 HelioShred Games · Artwork © Hugo Dolores, all rights reserved · <a href="/support#credits">Credits</a></div>
+    <div class="copy">© 2026 HelioShred Games · <a href="#credits">Credits</a></div>
   </footer>
 
   <script>
